@@ -1,0 +1,346 @@
+<body>
+
+    <!-- Top Headers-->
+    <nav class="common">
+        <div class="topheader">
+            <img src="assets/Dbhds.png">
+            <p>An Agency of the Commonwealth of Virginia</p>
+            <img id="image2" src="assets/virginiagov.PNG">
+            <a routerLink="/dbhds" id="headersearch">Agency?</a>
+        </div>
+    </nav>
+    <!--Second Header-->
+    <div class="secondhead">
+        <div class="topsecondheader">
+            <img src="assets/Dbhds1.jpeg">
+            <p>A Department of Behavioural Health and Development Sciences</p>
+            <div class="forsocial">
+                <a href="#" id="icon1" class="fa fa-facebook"></a>
+                <a href="#" id="icon2" class="fa fa-twitter"></a>
+                <a href="#" id="icon3" class="fa fa-google"></a>
+                <a href='#' id="icon4" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <!--Carasoul starts-->
+    <div class="carasoul-container">
+        <ngb-carousel *ngIf="images" class="carasoul">
+            <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption" class="fadedbox2">
+                    <h5 class="fixedtext">For emergency Contact (555)-555-5555</h5>
+                </div>
+                <div class="carousel-caption" class="fadedbox3">
+                    <h5 class="fixedtext" style="display: inline;"> <strong>|</strong> Sign Up here for Emails</h5>
+                </div>
+                <div class="carousel-caption" class="fadedbox">
+                    <h3 id="captiontext" class="title text">Early Intervention for Infantes and Toddlers<br><button id="para">Learn More</button></h3>
+
+                </div>
+
+            </ng-template>
+            <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption" class="fadedbox2">
+                    <h5 class="fixedtext">For emergency Contact (555)-555-5555</h5>
+                </div>
+                <div class="carousel-caption" class="fadedbox3">
+                    <h5 class="fixedtext" style="display: inline;"> <strong>|</strong> Sign Up here for Emails</h5>
+                </div>
+                <div class="carousel-caption" class="fadedbox">
+                    <h3 id="captiontext" class="title text">Same Day Access To Mental<br> Health Service<br><button id="para">Learn More</button></h3>
+                </div>
+
+            </ng-template>
+            <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption" class="fadedbox2">
+                    <h5 class="fixedtext">For emergency Contact (555)-555-5555</h5>
+                </div>
+                <div class="carousel-caption" class="fadedbox3">
+                    <h5 class="fixedtext" style="display: inline;"> <strong>|</strong> Sign Up here for Emails</h5>
+                </div>
+                <div class="carousel-caption" class="fadedbox">
+                    <h3 id="captiontext" class="title text">Suicide Prevention<br> <button id="para">Learn More</button></h3>
+
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+
+    <!--Carasoul Ends-->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar">
+            <button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="Home">
+                    <span>H</span><span>o</span><span>m</span><span>e</span>
+            </button>
+
+            <button (click)="showList6()" class="button but--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Getting Help">
+                <span>Ge</span><span>tt</span><span>ing</span> &nbsp;<span>H</span><span>e</span><span>l</span><span>p</span>
+            </button>
+            <div *ngIf="showHide6" id="myDropdown" class="dropdown-content1">
+                <ul>
+                    <button><a>Children & Families</a></button><br>
+                    <button><a>Behavioural Health Wellness</a></button><br>
+                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Housing & Employment</a></button>
+                    <button><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList1()" class="button but1--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Services">
+                <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>es</span>
+            </button>
+            <div *ngIf="showHide1" class="dropdown-content2">
+                <ul>
+                    <button><a>Children & Families</a></button><br>
+                    <button><a>Behavioural Health Wellness</a></button><br>
+                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Housing & Employment</a></button>
+                    <button><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList2()" class="button but2--nina button--nina button--text-thick button--text-upper button--size-s" data-text="About DBHDS">
+                <span>Ab</span><span>ou</span><span>t</span>&nbsp;<span>DB</span><span>H</span><span>DS</span>
+            </button>
+            <div *ngIf="showHide2" id="myDropdown3" class="dropdown-content3">
+                <ul>
+                    <button><a>Children & Families</a></button><br>
+                    <button><a>Behavioural Health Wellness</a></button><br>
+                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Housing & Employment</a></button>
+                    <button><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList3()" class="button but4--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Support">
+                <span>S</span><span>u</span><span>p</span><span>p</span><span>o</span><span>rt</span>
+            </button>
+            <div *ngIf="showHide3" id="myDropdown4" class="dropdown-content4">
+                <ul>
+                    <button><a>Children & Families</a></button><br>
+                    <button><a>Behavioural Health Wellness</a></button><br>
+                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Housing & Employment</a></button>
+                    <button><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList4()" class="button but3--nina button--nina button--text-thick button--text-upper button--size-s" data-text="programs">
+                 <span>P</span><span>r</span><span>o</span><span>g</span><span>r</span><span>ams</span>
+            </button>
+            <div *ngIf="showHide4" id="myDropdown5" class="dropdown-content5">
+                <ul>
+                    <button><a>Children & Families</a></button><br>
+                    <button><a>Behavioural Health Wellness</a></button><br>
+                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Housing & Employment</a></button>
+                    <button><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList5()" class="button but1--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Offices">
+                <span>Of</span><span>f</span><span>i</span><span>c</span><span>e</span><span>s</span>
+           </button>
+            <div *ngIf="showHide5" id="myDropdown6" class="dropdown-content2">
+                <ul>
+                    <button><a>Children & Families</a></button><br>
+                    <button><a>Behavioural Health Wellness</a></button><br>
+                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Housing & Employment</a></button>
+                    <button><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button class="button but4--nina button--nina button--text-thick button--text-upper button--size-s" data-text="FAQ">
+                 <span>F</span><span>A</span><span>Q</span>
+            </button>
+
+            <button class="button but5--nina button--nina button--text-thick button--text-upper button--size-s" data-text="ContactUs">
+                <span>Co</span><span>n</span><span>t</span><span>a</span><span>ct</span>&nbsp;<span>U</span><span>s</span>
+            </button>
+
+        </nav>
+        <!--Navigation Menu bar Ends-->
+        <!--Content in the middle-->
+        <div class="middle-content">
+            <div class="carousel-bottom">
+                <button class=" mpc1">For Members </button>
+                <button class="mpc2">For Providers</button>
+                <button class="mpc3">Crisis Support </button>
+            </div>
+            <div class="middle">
+                <h3>Services</h3>
+                <div class="images">
+
+                    <img src="/assets/disorderdbhds.png">
+
+                    <img style="margin-left: 5px;" src="/assets/dbhdscrisis.png">
+                    <img style="margin-left: 5px;" src="/assets/comdbhds.png">
+                    <img style="margin-left: 5px;" src="/assets/adultdbhds.png">
+                    <img style="margin-left: 5px;" src="/assets/prevdbhds.png">
+                    <img style="margin-left: 5px;" src="/assets/youthdbhds.png">
+                </div>
+                <div class="middletext">
+                    <a style="margin-left: 28px;margin-top: 15px;font-size: large;
+                 font-weight: bold;">Norcotic</a>
+                    <a style="margin-left: 68px;margin-top: 15px;font-size: large;
+                 font-weight: bold;">Crisis</a>
+                    <a style="margin-left: 68px;margin-top: 15px;font-size: large;
+                 font-weight: bold;">Community </a>
+                    <a style="margin-left: 39px;margin-top: 15px;font-size: large;
+                 font-weight: bold;">Adult Mental</a>
+                    <a style="margin-left: 20px;margin-top: 15px;font-size: large;
+                 font-weight: bold;">Youth Mental </a>
+                    <a style="margin-left: 20px;margin-top: 15px;font-size: large;
+                 font-weight: bold;">Prevention </a>
+                </div>
+                <div class="middletext">
+                    <a style="margin-left: 28px;margin-top: 10px;font-size: large;
+                 font-weight: bold;">Support</a>
+                    <a style="margin-left: 60px;margin-top: 10px;font-size: large;
+                 font-weight: bold;">Support</a>
+                    <a style="margin-left: 56px;margin-top: 10px;font-size: large;
+                 font-weight: bold;">Information </a>
+                    <a style="margin-left: 55px;margin-top: 10px;font-size: large;
+                 font-weight: bold;">Health</a>
+                    <a style="margin-left: 75px;margin-top: 10px;font-size: large;
+                 font-weight: bold;">Health </a>
+                    <a style="margin-left: 75px;margin-top: 10px;font-size: large;
+                 font-weight: bold;">Care </a>
+                </div>
+
+
+            </div>
+            <div class="middle1">
+                <h3>DBHDS News</h3>
+                <a href="" class="news1">TB Case Reported at Southwestern College; Case Not Related to this services.</a>
+                <a href="" class="news2">County Places Handwashing Stations, Takes Other COVID-19 Prevention Steps</a>
+                <a href="" class="news3">At this time, the risk of COVID-19 transmission remains low.</a><br>
+                <a href=" " style="color:navy;text-decoration:none;font-weight: bold;margin-top:90px;">------------->More Stories<---------------</a>
+            </div>
+            <div class="list-type3">
+                <a>Behavioural Informtion</a>
+                <li style="margin-top: 40px;font-weight: bold;list-style-type: none;margin-left: 20px;">//to-do</li>
+                <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">//to-do</li>
+                <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">//to-do</li>
+                <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">//to-do</li>
+                <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">//to-do</li>
+            </div>
+
+        </div>
+        <!--Content in the middle ends-->
+        <!----content in the right -->
+        <div class="right-content">
+            <div class="container">
+                <button (click)="isCheck()">24/7 Support Lines</button>
+                <div *ngIf="check">
+                    <div class="support-content">
+                        <a><strong>Phone</strong>: (804) 786-3921</a><br><br>
+                        <a><strong>Voice TDD</strong>: (804) 371-8977</a><br><br>
+                        <a><strong>Fax</strong>: (804) 371-6638 </a><br><br>
+                    </div>
+                </div>
+                <button (click)="isCheck1()">Locations & Hours</button><br>
+                <div *ngIf="check1">
+                    <div class="location-content">
+                        <address>
+                        <a style="font-weight: bold;">Central Office</a><br><br>
+                        1220 Bank Street<br>
+                        Richmond, Virginia 23219<br>
+                        Mailing Address<br>
+                        P.O. Box 1797<br>
+                        Richmond, VA 23218-1797
+                       </address>
+                        <address>
+                        <a style="font-weight: bold;">Mailing Address</a><br><br>
+                        P.O. Box 1797 <br>
+                        Richmond,<br> VA 23218-1797
+                       </address>
+
+                    </div>
+                </div>
+                <button>Quick Looks</button>
+                <div *ngIf="check2" class="Quick-content">
+                    <ol>
+                        <li><a href="#">Get Emergency Information?</a></li>
+                        <li><a href="#">Receive Safety Alerts?</a></li>
+                        <li><a href="#">Learn Administer NAlaxon(Revive)?</a></li>
+                        <li><a href="#">Access Long Term services?</a></li>
+                        <li><a href="#">Access crisis support services?</a></li>
+                        <li><a href="#">Individual and family support?</a></li>
+                        <li><a href="#">For military service members?</a></li>
+                        <li><a href="#">Find a provider</a></li>
+                        <li><a href="#">Get a waiver</a></li>
+                        <li><a href="#">Become a provider</a></li>
+                        <li><a href="#">File a service complaint?</a></li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----content in the right -->
+    <!----- Footer Starts-->
+
+    <footer class="section footer-classic context-dark bg-image" id="footermain">
+        <div class="container1">
+            <div class="row row-40">
+                <div class="col-md">
+                    <div class="pr-xl-4">
+                        <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                        <p>We are the department of health and behavioural services</p>
+                        <!-- Rights-->
+                        <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                    </div>
+
+                </div>
+                <div class="col-md">
+                    <h5>Offices</h5>
+                    <dl class="contact-list">
+                        <dt>Central Office</dt>
+                        <dd>1220 Bank Street Richmond, Virginia 23219</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Mailing Address</dt>
+                        <dd>P.O. Box 1797 Richmond, VA 23218-1797</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>phones</dt>
+                        <dd>(804) 786-3921</dd>
+                    </dl>
+
+                </div>
+                <div class="col-md">
+                    <h5>Policies</h5>
+                    <ul class="nav-list">
+                        <li><a href="">FOIA Policy </a></li>
+                        <li><a href="">HIPAA Policy</a></li>
+                        <li><a href="">Web-Policy</a></li>
+                        <li><a href="">View Expenditures</a></li>
+                        <li><a href="">Staff Directory</a></li>
+                    </ul>
+
+                </div>
+                <button onclick="topFunction()" style="height:45px;width:50px;z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer; " title="Go to top"><i class="fa fa-arrow-up"></i></button>
+                <div class="col-md">
+                    <div>
+                        <img style="margin-top:12px;width:150px;height:50px;" src="/assets/deltadbhds.png">
+                    </div>
+                    <div>
+                        <img style="margin-top:12px;width:150px;height:50px;" src="/assets/dbhdseva.jpg">
+                    </div>
+                    <div>
+                        <img style="margin-top:12px;width:150px;height:50px;" src="/assets/vecdbhds.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer Html Ends-->
+
+</body>

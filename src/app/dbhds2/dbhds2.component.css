@@ -1,0 +1,293 @@
+body {
+    background-image: url("/assets/bg.jpg");
+    background-attachment: fixed;
+}
+
+
+/*....Headers.....*/
+
+nav.common {
+    width: 1400px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.common img {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+#image2 {
+    margin-left: 700px;
+}
+
+.topheader p {
+    display: inline;
+    color: white;
+    margin-left: 0px;
+    text-shadow: black;
+}
+
+#headersearch {
+    float: right;
+    margin-right: 70px;
+    margin-top: 7px;
+    font-weight: 300;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+}
+
+nav.secondhead {
+    width: auto;
+    background-color: #233E95;
+    height: 75px;
+    margin-top: 37px;
+    top: 0;
+}
+
+.secondhead img {
+    width: 250px;
+    height: 75px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.topsecondheader p {
+    display: inline;
+    color: white;
+    margin-left: 80px;
+    text-shadow: black;
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: 3px 5px 2px #474747;
+    color: #FFFFFF;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+.searchcontent {
+    position: absolute;
+    display: inline;
+    padding-left: 30px;
+    padding-top: 23px;
+    padding-right: 10px;
+}
+
+.searchcontent button {
+    border-radius: 25px;
+    outline: none;
+}
+
+.searchcontent input[type=text] {
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    border: 2px solid whitesmoke;
+    text-decoration: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+    display: inline-block;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchcontent input[type=text]:focus {
+    z-index: 1000;
+    position: relative;
+}
+
+#searchicon {
+    cursor: pointer;
+    float: right;
+    margin-top: 23px;
+    margin-right: 60px;
+    border-radius: 80px;
+}
+
+
+/*-----Headers End--------*/
+
+
+/*---- Mrenu ---*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    position: relative;
+}
+
+.button1 {
+    border: 2px solid navy;
+    background-color: #f0f0f0;
+    margin-left: 65px;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    width: 150px;
+    height: 100px;
+    border-style: outset;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    -o-transition: background-color .2s ease-in;
+    -moz-transition: background-color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+
+.sweep-to-bottom {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: color 1000ms;
+    transition: color 1000ms;
+    display: block;
+    margin-top: 3px;
+    float: left;
+    width: 190px;
+    position: relative;
+    border-style: outset;
+    position: relative;
+    border-bottom: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sweep-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgrey;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+
+.sweep-to-bottom:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.button1:hover .dropdown-content {
+    display: block;
+}
+
+.button1:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#button2 {
+    float: left;
+    margin-left: 1px;
+    margin-top: 4px;
+    margin-right: 3px;
+    height: 40px;
+}
+
+.dropdown-content ul {
+    display: block;
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+}
+
+.dropdown-content a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: small;
+    float: left;
+    font-weight: bold;
+}
+
+#iconmain {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-left: 60px;
+    margin-right: 25px;
+    z-index: 100;
+}
+
+.dropdown:hover .button1 {
+    background-color: #3e8e41;
+}
+
+
+/*-- carasoul -----*/
+
+.carasoul {
+    margin-left: 95px;
+    margin-top: 20px;
+    margin-right: 95px;
+    outline: none;
+    -webkit-box-shadow: -1px 1px 5px 9px lightgrey;
+    -moz-box-shadow: -1px 1px 5px 9px lightgrey;
+    box-shadow: -1px 1px 5px 5px lightgrey;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 10px;
+    width: 10px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '';
+    font-size: 55px;
+    color: red;
+}
+
+.carousel-control-prev-icon:after {
+    content: '';
+    font-size: 55px;
+    color: red;
+}
+
+.carasoul-container {
+    border-radius: 20px;
+    outline: none;
+    box-shadow: blue;
+}
+
+#captiontext {
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+    text-shadow: 0 -1px 4px white, 0 -2px 10px navy, 0 -10px 20px #ff8000, 0 -18px 40px white;
+}

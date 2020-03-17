@@ -1,0 +1,248 @@
+<body>
+    <!-- Top Headers-->
+    <nav class="common">
+        <div class="topheader">
+            <img src="assets/Dbhds.png">
+            <p>An Agency of the Commonwealth of Virginia</p>
+            <img id="image2" src="assets/virginiagov.PNG">
+            <a routerLink="/dbhds" id="headersearch">Agency?</a>
+        </div>
+    </nav>
+    <!--Second Header-->
+    <nav class="secondhead">
+        <div class="topsecondheader">
+            <img src="assets/Dbhds1.jpeg">
+            <p>A Department Of Behavioural Health And Development Sciences</p>
+            <div class="searchcontent">
+                <button (click)="isCheck()" id="quick-looks">Quick Looks</button>
+                <div *ngIf="check">
+                    <div class="list-type1">
+                        <ol>
+                            <li><a href="#">Get Emergency Information?</a></li>
+                            <li><a href="#">Receive Safety Alerts?</a></li>
+                            <li><a href="#">Learn Administer NAlaxon(Revive)?</a></li>
+                            <li><a href="#">Access Long Term services?</a></li>
+                            <li><a href="#">Access crisis support services?</a></li>
+                            <li><a href="#">Individual and family support?</a></li>
+                            <li><a href="#">For military service members?</a></li>
+                            <li><a href="#">Find a provider</a></li>
+                            <li><a href="#">Get a waiver</a></li>
+                            <li><a href="#">Become a provider</a></li>
+                            <li><a href="#">File a service complaint?</a></li>
+                            <li><a href="#">Find more about DOJ settlement aggrement</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="searchicon">
+                <button (click)="isCheck1()" style="border-radius: 25px;outline:none;text-decoration:none;"><i class="fa fa-search"></i></button>
+                <div *ngIf="check1">
+                    <div class="seperate-searchbox">
+                        <form>
+                            <input id="searchbar" type="text" placeholder="Search....">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---Sidebar toggle Menu-->
+
+    <!-- Navigation Menu Starts-->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="sidebar-header">
+                <a>
+                    <i id="iconmain" class="fa fa-home"></i>
+                    <strong id="maintext">Home</strong>
+                </a>
+            </div>
+            <button (click)="showList1()" id="sidebar-headercom">
+                <a  data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                    <i id="icon" class="fa fa-question-circle"></i> <strong id="menu-text">Getting Help</strong>
+                </a>
+            </button>
+            <div *ngIf="showHide1" id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button class="sweep-to-bottom"><a>Children & Families</a></button><br>
+                    <button class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button><br>
+                    <button class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList2()" id="sidebar-headercom">
+                <a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                    <i id="icon" class="fa fa-briefcase"></i> <strong id="menu-text">About Dbhds</strong>
+                </a>
+            </button>
+            <div *ngIf="showHide2" id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button class="sweep-to-bottom"><a>Children & Families</a></button><br>
+                    <button class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button><br>
+                    <button class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList3()" id="sidebar-headercom">
+                <a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                    <i id="icon" class="fa fa-key"></i> <strong id="menu-text">Services</strong>
+                </a>
+            </button>
+            <div *ngIf="showHide3" id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button class="sweep-to-bottom"><a>Children & Families</a></button><br>
+                    <button class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button><br>
+                    <button class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList4()" id="sidebar-headercom">
+                <a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                    <i id="icon"class="fa fa-american-sign-language-interpreting"></i> <strong id="menu-text">Support</strong>
+                </a>
+            </button>
+            <div *ngIf="showHide4" id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button class="sweep-to-bottom"><a>Children & Families</a></button><br>
+                    <button class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button><br>
+                    <button class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList5()" id="sidebar-headercom">
+                <a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                    <i id="icon" class="fa fa-balance-scale"></i> <strong id="menu-text">Programs</strong>
+                </a>
+            </button>
+            <div *ngIf="showHide5" id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button class="sweep-to-bottom"><a>Children & Families</a></button><br>
+                    <button class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button><br>
+                    <button class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+            <button (click)="showList6()" id="sidebar-headercom">
+                <a  data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                    <i id="icon" class="fa fa-phone"></i> <strong id="menu-text">Offices</strong>
+                </a>
+                
+            </button>
+            <div *ngIf="showHide6" id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button class="sweep-to-bottom"><a>Children & Families</a></button><br>
+                    <button class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button><br>
+                    <button class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+            <div id="sidebar-header">
+                <a>
+                    <i id="iconmain" class="fa fa-question"></i> <strong id="maintext">FAQ</strong>
+                </a>
+            </div>
+            <div id="sidebar-header">
+                <a>
+                    <i id="iconmain" class="fa fa-paper-plane"></i> <strong id="maintext">Contact</strong>
+                </a>
+            </div>
+        </nav>
+        <!--Navigation Menu bar Ends-->
+        <!--Carasoul starts-->
+        <div class="carasoul-container">
+            <ngb-carousel *ngIf="images" class="carasoul">
+                <ng-template ngbSlide>
+                    <img [src]="images[0]" alt="Random first slide">
+
+                    <div class="carousel-caption" class="fadedbox">
+                        <h3 id="captiontext" class="title text">Early Intervention for Infantes and Toodlers<br><button id="para">Learn More</button></h3>
+
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img [src]="images[1]" alt="Random second slide">
+                    <div class="carousel-caption" class="fadedbox">
+                        <h3 id="captiontext" class="title text">Same Day Access To Mental<br> Health Service<br><button id="para">Learn More</button></h3>
+
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img [src]="images[2]" alt="Random third slide">
+                    <div class="carousel-caption" class="fadedbox">
+                        <h3 id="captiontext" class="title text">Suicide Prevention<br> <button id="para">Learn More</button></h3>
+
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <!--Carasoul Ends-->
+        <!--Right text starts(How do I?)-->
+        <div class="Rightimages">
+            <img id="ri1" src="assets/vecdbhds.png">
+            <img id="ri2" src="assets/dbhdseva.jpg">
+            <img id="ri3" src="assets/deltadbhds.png">
+        </div>
+        <!--Right text Ends(How do I?)-->
+    </div>
+
+    <!--Footer Html Starts-->
+    <footer class="section footer-classic context-dark bg-image" id="footermain">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4">
+                        <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                        <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                        <!-- Rights-->
+                        <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                    </div>
+                    <div class="social">
+                        <a href="#" id="icon1" class="fa fa-facebook"></a>
+                        <a href="#" id="icon1" class="fa fa-twitter"></a>
+                        <a href="#" id="icon1" class="fa fa-google"></a>
+                        <a href="#" id="icon1" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Offices</h5>
+                    <dl class="contact-list">
+                        <dt>Central Office</dt>
+                        <dd>1220 Bank Street Richmond, Virginia 23219</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Mailing Address</dt>
+                        <dd>P.O. Box 1797 Richmond, VA 23218-1797</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>phones</dt>
+                        <dd>(804) 786-3921</dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <h5>Policies</h5>
+                    <ul class="nav-list">
+                        <li><a href="">FOIA Policy </a></li>
+                        <li><a href="">HIPAA Policy</a></li>
+                        <li><a href="">Web-Policy</a></li>
+                        <li><a href="">View Expenditures</a></li>
+                        <li><a href="">Staff Directory</a></li>
+                        <li><a href="">Emergency Information</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer Html Ends-->
+
+</body>

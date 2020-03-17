@@ -1,0 +1,130 @@
+<body>
+    <!-- Top Headers-->
+    <nav class="common">
+        <div class="topheader">
+            <img src="assets/Dbhds.png">
+            <p>An Agency of the Commonwealth of Virginia</p>
+            <img id="image2" src="assets/virginiagov.PNG">
+            <a routerLink="/dbhds" id="headersearch">Agency?</a>
+        </div>
+    </nav>
+    <!--Second Header-->
+    <nav class="secondhead">
+        <div class="topsecondheader">
+            <img src="assets/Dbhds1.jpeg">
+            <p>A Department Of Behavioural Health And Development Sciences</p>
+
+            <div id="searchicon">
+                <button (click)="isCheck1()" style="border-radius: 25px;outline:none;text-decoration:none;"><i class="fa fa-search"></i></button>
+                <div *ngIf="check1">
+                    <div class="seperate-searchbox">
+                        <form>
+                            <input id="searchbar" type="text" placeholder="Search....">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+
+        <div class="dropdown">
+            <button class="button1" style="background-color: #93C775;font-size: large;font-weight: bold;"><i id="iconmain" class="fa fa-question-circle"></i>Getting Help</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button id="button2" class="sweep-to-bottom"><a>Children & Families</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button1" style="background-color: lightseagreen;font-size: large;font-weight: bold;"><i id="iconmain" class="fa fa-briefcase"></i>Services</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button id="button2" class="sweep-to-bottom"><a>Children & Families</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button1" style="background-color: lightgrey;font-size: large;font-weight: bold;"><i id="iconmain" class="fa fa-key"></i>Support</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button id="button2" class="sweep-to-bottom"><a>Children & Families</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button1" style="background-color: white;font-size: large;font-weight: bold;"><i id="iconmain" class="fa fa-american-sign-language-interpreting"></i>Programms</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button id="button2" class="sweep-to-bottom"><a>Children & Families</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button1" style="background-color: lightcoral;font-size: large;font-weight: bold;"><i id="iconmain" class="fa fa-phone"></i>Office</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button id="button2" class="sweep-to-bottom"><a>Children & Families</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button1" style="background-color: #93C775;font-size: large;font-weight: bold;"><i id="iconmain" class="fa fa-balance-scale"></i>About DBHDS</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <button id="button2" class="sweep-to-bottom"><a>Children & Families</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Behavioural Health Wellness</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>DBHDS bed registry</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>Housing & Employment</a></button>
+                    <button id="button2" class="sweep-to-bottom"><a>My life my community</a></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="carasoul-container">
+        <ngb-carousel *ngIf="images" class="carasoul">
+            <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                    <h3 id="captiontext">Early Intervention for Infantes and Toodlers</h3>
+                    <a id="para">Learn More</a>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                    <h3 id="captiontext">Same Day Access To Mental Health Service</h3>
+                    <a id="para">Learn More</a>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                    <h3 id="captiontext">Suicide Prevention</h3>
+                    <p id="para">Learn More</p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</body>
