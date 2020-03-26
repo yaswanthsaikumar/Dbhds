@@ -3,199 +3,231 @@
     <!-- Top Headers-->
     <nav class="common">
         <div class="topheader">
-            <img src="assets/Dbhds.png">
-            <p>An Agency of the Commonwealth of Virginia</p>
+
             <img id="image2" src="assets/virginiagov.PNG">
-            <a routerLink="/dbhds" id="headersearch">Agency?</a>
+            <p><strong style="margin-left: 10px;"> Agencies  |  Governors</strong></p>
+
+            <button class="lang"><img style="margin-bottom: 4px;margin-right:10px;width:20px;height:15px;" src="assets/Google.png">Select Language |<div class="arrow-down"></div></button>
+            <button class="vas">Search Virginia.Gov</button>
         </div>
+
     </nav>
     <!--Second Header-->
     <nav class="secondhead">
         <div class="topsecondheader">
-            <img src="assets/Dbhds1.jpeg">
-            <p>A Department Of Behavioural Health And Development Sciences</p>
+            <a class="brand" href="index.html"><img src="assets/Dbhds.png"></a>
 
-            <div id="searchicon">
-                <button (click)="isCheck1()" style="border-radius: 25px;outline:none;text-decoration:none;"><i class="fa fa-search"></i></button>
-                <div *ngIf="check1">
-                    <div class="seperate-searchbox">
-                        <form>
-                            <input id="searchbar" type="text" placeholder="Search....">
-                            <i class="fa fa-search"></i>
-                        </form>
-                    </div>
-                </div>
+            <p>A Department of Behavioral Health and Development Sciences</p>
+
+            <form style="display: inline;">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <div class="forsocial">
+                <button href="#" id="icon1" class="fa fa-facebook"></button>
+                <button href="#" id="icon2" class="fa fa-twitter"></button>
+                <!-- <button href="#" id="icon3"><img style="width:20px;height:15px;" src="assets/Google.png"></button> -->
+                <button href='#' id="icon4" class="fa fa-youtube"></button>
             </div>
+
         </div>
     </nav>
+    <div class="thirdhead">
+        <div class="topthirdheader">
+            <a style="color:red;font-family:Montserrat;font-weight: bold;">Crisis HotLine (555)-555-5555</a>
+            <a style="color:red;margin-left: 350px;font-family:Montserrat;font-weight: bold;text-decoration:underline;">Information Regarding Covid-19</a>
+            <a style="color:red ;float:right;font-family:Montserrat;font-weight: bold;text-decoration:underline;">Sign Up Here For Emails</a>
 
+        </div>
+    </div>
     <!---Sidebar toggle Menu-->
 
     <!-- Navigation Menu Starts-->
     <div class="wrapper">
+
         <!-- Sidebar  -->
 
         <nav id="sidebar">
-            <button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="Home">
+            <button class="button button--nina button--color" data-text="Home">
                     <span>H</span><span>o</span><span>m</span><span>e</span>
             </button>
 
-            <button (click)="showList6()" class="button but--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Getting Help">
-                <span>Ge</span><span>tt</span><span>ing</span> &nbsp;<span>H</span><span>e</span><span>l</span><span>p</span>
+            <button (click)="showList6()" class="button but--nina button--nina" data-text="About DBHDS">
+                <span>Ab</span><span>o</span><span>ut</span> &nbsp;<span>D</span><span>B</span><span>H</span><span>D</span><span>S</span>
             </button>
             <div *ngIf="showHide6" id="myDropdown" class="dropdown-content1">
                 <ul>
                     <button><a>Children & Families</a></button><br>
-                    <button><a>Behavioural Health Wellness</a></button><br>
-                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>Behavioral Health Wellness</a></button><br>
+                    <button><a>DBHDS Bed Registry</a></button>
                     <button><a>Housing & Employment</a></button>
-                    <button><a>My life my community</a></button>
+                    <button><a>My Life My Community</a></button>
                 </ul>
             </div>
-            <button (click)="showList1()" class="button but1--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Services">
+            <button (click)="showList1()" class="button but1--nina button--nina" data-text="Services">
                 <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>es</span>
             </button>
             <div *ngIf="showHide1" class="dropdown-content2">
                 <ul>
                     <button><a>Children & Families</a></button><br>
                     <button><a>Behavioural Health Wellness</a></button><br>
-                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>DBHDS Bed Registry</a></button>
                     <button><a>Housing & Employment</a></button>
                     <button><a>My life my community</a></button>
                 </ul>
             </div>
-            <button (click)="showList2()" class="button but2--nina button--nina button--text-thick button--text-upper button--size-s" data-text="About DBHDS">
+            <button (click)="showList2()" class="button but2--nina button--nina" data-text="Getting Help">
                 <span>Ab</span><span>ou</span><span>t</span>&nbsp;<span>DB</span><span>H</span><span>DS</span>
             </button>
             <div *ngIf="showHide2" id="myDropdown3" class="dropdown-content3">
                 <ul>
                     <button><a>Children & Families</a></button><br>
                     <button><a>Behavioural Health Wellness</a></button><br>
-                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>DBHDS Bed Registry</a></button>
                     <button><a>Housing & Employment</a></button>
                     <button><a>My life my community</a></button>
                 </ul>
             </div>
-            <button (click)="showList3()" class="button but4--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Support">
+            <button (click)="showList3()" class="button but3--nina button--nina" data-text="Support">
                 <span>S</span><span>u</span><span>p</span><span>p</span><span>o</span><span>rt</span>
             </button>
             <div *ngIf="showHide3" id="myDropdown4" class="dropdown-content4">
                 <ul>
                     <button><a>Children & Families</a></button><br>
                     <button><a>Behavioural Health Wellness</a></button><br>
-                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>DBHDS Bed Registry</a></button>
                     <button><a>Housing & Employment</a></button>
                     <button><a>My life my community</a></button>
                 </ul>
             </div>
-            <button (click)="showList4()" class="button but3--nina button--nina button--text-thick button--text-upper button--size-s" data-text="programs">
+            <button (click)="showList4()" class="button but4--nina button--nina  " data-text="Programs">
                  <span>P</span><span>r</span><span>o</span><span>g</span><span>r</span><span>ams</span>
             </button>
             <div *ngIf="showHide4" id="myDropdown5" class="dropdown-content5">
                 <ul>
                     <button><a>Children & Families</a></button><br>
                     <button><a>Behavioural Health Wellness</a></button><br>
-                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>DBHDS Bed Registry</a></button>
                     <button><a>Housing & Employment</a></button>
                     <button><a>My life my community</a></button>
                 </ul>
             </div>
-            <button (click)="showList5()" class="button but1--nina button--nina button--text-thick button--text-upper button--size-s" data-text="Offices">
+            <button (click)="showList5()" class="button but5--nina button--nina " data-text="Offices">
                 <span>Of</span><span>f</span><span>i</span><span>c</span><span>e</span><span>s</span>
            </button>
-            <div *ngIf="showHide5" id="myDropdown6" class="dropdown-content2">
+            <div *ngIf="showHide5" id="myDropdown6" class="dropdown-content6">
                 <ul>
                     <button><a>Children & Families</a></button><br>
                     <button><a>Behavioural Health Wellness</a></button><br>
-                    <button><a>DBHDS bed registry</a></button>
+                    <button><a>DBHDS Bed Registry</a></button>
                     <button><a>Housing & Employment</a></button>
                     <button><a>My life my community</a></button>
                 </ul>
             </div>
-            <button class="button but4--nina button--nina button--text-thick button--text-upper button--size-s" data-text="FAQ">
+            <button class="button but6--nina button--nina" data-text="FAQ">
                  <span>F</span><span>A</span><span>Q</span>
             </button>
 
-            <button class="button but5--nina button--nina button--text-thick button--text-upper button--size-s" data-text="ContactUs">
+            <button class="button but7--nina button--nina " data-text="ContactUs">
                 <span>Co</span><span>n</span><span>t</span><span>a</span><span>ct</span>&nbsp;<span>U</span><span>s</span>
             </button>
 
         </nav>
 
-
         <!--Navigation Menu bar Ends-->
         <!--Carasoul starts-->
+
         <div class="carasoul-container">
+
             <ngb-carousel *ngIf="images" class="carasoul">
                 <ng-template ngbSlide>
-                    <img [src]="images[0]" alt="Random first slide">
+                    <img [src]="images[0]" alt="Random third slide">
+
 
                     <div class="carousel-caption" class="fadedbox">
-                        <h3 id="captiontext" class="title text">Early Intervention for Infantes and Toodlers<br><button id="para">Learn More</button></h3>
+                        <h3 id="captiontext" class="title text">Substance Abuse</h3>
+                        <h5 class="captiontext2">VA Ending the Opioid Crisis Together<br> <button id="para">Learn More</button></h5>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img [src]="images[1]" alt="Random first slide">
+
+                    <div class="carousel-caption" class="fadedbox">
+                        <h3 id="captiontext" class="title text">Early Intervention for Infants and Toddlers<br><button id="para">Learn More</button></h3>
 
                     </div>
                 </ng-template>
                 <ng-template ngbSlide>
-                    <img [src]="images[1]" alt="Random second slide">
+                    <img [src]="images[2]" alt="Random second slide">
                     <div class="carousel-caption" class="fadedbox">
                         <h3 id="captiontext" class="title text">Same Day Access To Mental<br> Health Service<br><button id="para">Learn More</button></h3>
 
                     </div>
                 </ng-template>
                 <ng-template ngbSlide>
-                    <img [src]="images[2]" alt="Random third slide">
+                    <img [src]="images[3]" alt="Random third slide">
                     <div class="carousel-caption" class="fadedbox">
                         <h3 id="captiontext" class="title text">Suicide Prevention<br> <button id="para">Learn More</button></h3>
 
                     </div>
                 </ng-template>
             </ngb-carousel>
+
+
+
         </div>
 
         <!--Carasoul Ends-->
 
         <!--Right text starts(How do I?)-->
-
-        <div class="list-type3">
-            <a>Quick Looks</a>
-            <li style="margin-top: 40px;font-weight: bold;list-style-type: none;margin-left: 20px;">Get Emergency Info!</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Receive Safety Alerts</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Learn Administer NAlaxon(Revive)?</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Get competency Information?</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Get Information for military family!</li>
-
-
-            <a id="secondlisttype">Service & Support</a>
-            <li style="margin-top: 50px;font-weight: bold;list-style-type: none;margin-left: 20px;">Long Term servieces</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Crisis support and services</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Service for military members</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">File a service complaint</li>
-            <li style="margin-top: 10px;font-weight: bold;list-style-type: none;margin-left: 20px;">Short term services</li>
-
+        <div class="right-content">
+            <div class="carousel-bottom">
+                <button class=" mpc1"><a style="writing-mode: vertical-rl;">For Individuals </a></button>
+                <button class="mpc2"><a style="writing-mode: vertical-rl;">For Providers</a></button>
+                <button class="mpc3"><a style="writing-mode: vertical-rl;">Crisis Support</a> </button>
+            </div>
         </div>
-        <!--Right text Ends(How do I?)-->
+
     </div>
 
-    <!--Footer Html Starts-->
+    <div class="thirdhead">
+        <div class="tag">
+
+            <a style="color:white;margin-left: 400px;font-family:Montserrat;font-weight: bold;">Quick Links</a>
+        </div>
+        <div class="Ql">
+            <button style="background-color:#518493;margin-left: 250px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:100px;height:125px;" src="assets/Emergency .png" ><p style="color:white;margin-top:-30px;font-size: x-small;font-weight: bold">Get Emergency Information</p></button>
+            <button style="background-color:#519386;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:125px;height:125px;" src="assets/Alert.png"><p style="color:white;margin-top:-20px;font-size: x-small;font-weight: bold">Receive Safety Alerts</p></button>
+            <button style="background-color:#C18A05;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-left:-20;margin-top: -25px;width:190px;height:125px;margin-left: -40px;" src="assets/Revive.png"><p style="color:white;margin-top:-30px;font-size: x-small;font-weight: bold">Learn to Admin Noloxen(Revive)</p></button>
+            <button style="background-color:#623E72;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:120px;height:125px;" src="assets/Clock.png"><p style="color:white;margin-top:-30px;font-size: x-small;font-weight: bold">Access Long Term Services</p></button>
+            <button style="background-color:gray;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:120px;height:125px;" src="assets/Cultural Competency.png"><p style="color:white;margin-top:-30px;font-size: x-small;font-weight: bold">Cultural Competency Information</p></button>
+        </div>
+        <div class="Ql">
+            <button style="background-color:#5B57BC;margin-left: 250px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:120px;height:125px;" src="assets/Military.png"><p style="color:white;margin-top:-20px;font-size: x-small;font-weight: bold;">Military Service Member</p></button>
+            <button style="background-color:#46C5EA;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:120px;height:125px;" src="assets/Waiver.png"><p style="color:white;margin-top:-20px;font-size: x-small;font-weight: bold;">Get a Wavier</p></button>
+            <button style="background-color:#A5244C;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -10px;width:80px;height:105px;" src="assets/Complaint.png"><p style="color:white;margin-top:-20px;font-size: x-small;font-weight: bold;">File a Service Complaint</p></button>
+            <button style="background-color:#0D4B5D;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:120px;height:125px;" src="assets/Community Board.png"><p style="color:white;margin-top:-20px;font-size: x-small;font-weight: bold;">Comunity Service Boards</p></button>
+            <button style="background-color:green;;margin-left: 70px;width:145px;height:105px;border-radius:20px;"><img style="margin-top: -25px;width:120px;height:125px;" src="assets/DOJ Agreement.png"><p style="color:white;margin-top:-20px;font-size: x-small;font-weight: bold;">DOJ Agreement</p></button>
+        </div>
+    </div>
+
     <footer class="section footer-classic context-dark bg-image" id="footermain">
         <div class="container">
             <div class="row row-40">
+                <a class="brand"><img class="brand-logo-light" src="assets/Dbhds.png"></a>
                 <div class="col-md">
                     <div class="pr-xl-4">
-                        <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                        <p>We are the department of health and behavioural services</p>
+
+                        <p class="Department">Virginia Department of<br> Behavioral Health & <br>Developmental Services
+                        </p>
                         <!-- Rights-->
-                        <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                        <p class="rights"><span>©  </span><span class="copyright-year"></span><span>Copyright </span><span></span><span>. </span><span>2020 DBHDS All Rights Reserved</span></p>
                     </div>
-                    <div class="social">
-                        <a href="#" id="icon1" class="fa fa-facebook"></a>
-                        <a href="#" id="icon1" class="fa fa-twitter"></a>
-                        <a href="#" id="icon1" class="fa fa-google"></a>
-                        <a href="#" id="icon1" class="fa fa-linkedin"></a>
-                    </div>
+
                 </div>
                 <div class="col-md">
-                    <h5>Offices</h5>
+                    <h5 style="margin-left: 40px;">Offices</h5>
                     <dl class="contact-list">
                         <dt>Central Office</dt>
                         <dd>1220 Bank Street Richmond, Virginia 23219</dd>
@@ -211,7 +243,7 @@
 
                 </div>
                 <div class="col-md">
-                    <h5>Policies</h5>
+                    <h5 style="margin-left: 60px;">Policies</h5>
                     <ul class="nav-list">
                         <li><a href="">FOIA Policy </a></li>
                         <li><a href="">HIPAA Policy</a></li>
@@ -221,21 +253,35 @@
                     </ul>
 
                 </div>
-                <div class="col-md">
-                    <div>
-                        <img style="margin-top:12px;width:150px;height:50px;" src="/assets/deltadbhds.png">
-                    </div>
-                    <div>
-                        <img style="margin-top:12px;width:150px;height:50px;" src="/assets/dbhdseva.jpg">
-                    </div>
-                    <div>
-                        <img style="margin-top:12px;width:150px;height:50px;" src="/assets/vecdbhds.png">
-                    </div>
-                </div>
-            </div>
-        </div>
 
+                <p style="margin-left: 50px;font-weight: bold;font-size:x-large;">Connect w/ Us</p>
+
+                <div style="display: inline-block;margin-left:0px;margin-top: 75px;">
+                    <a class="fa fa-facebook" style="border-color: black;margin-left:-40px;color:white; width: 50px;"></a>
+                    <a class="fa fa-twitter" style="border-color: black;margin-left:40px;color:#08A0E9 ; width: 50px;"></a>
+                    <a class="fa fa-youtube" style="border-color: black;margin-left:40px;color:red; width: 50px;"></a>
+                </div>
+                <div style="display:inline-block;margin-top: -58px;margin-left: 790px;">
+                    <img style="margin-left:0px;width:75px;height:50px;;" src="/assets/deltadbhds.png">
+                    <img style="margin-left:40px;width:75px;height:50px;;" src="/assets/dbhdseva .png">
+                    <img style="margin-left:30px;width:75px;height:50px;" src="/assets/vecdbhds.png">
+                </div>
+                <button onclick="topFunction()" style="height:45px;width:50px;z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                margin-top: -232px;
+                background-color: red;
+                color: white;
+                margin-left: 0px;
+                cursor: pointer; " title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+            </div>
+
+
+
+        </div>
     </footer>
-    <!--Footer Html Ends-->
 
 </body>

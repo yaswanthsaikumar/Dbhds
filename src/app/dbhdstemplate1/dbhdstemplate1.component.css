@@ -22,8 +22,44 @@ nav.common {
     margin-top: 0px;
 }
 
-#image2 {
+.lang {
     margin-left: 700px;
+    margin-top: 0px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-style: outset;
+    border-color: black;
+    border-left: 1px solid white;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 10px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #f00;
+}
+
+.vas {
+    margin-left: 2px;
+    height: 40px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    border-style: outset;
+    background-color: black;
+    border-color: black;
+    border-left: 1px solid white;
+}
+
+#image2 {
+    margin-left: 0px;
 }
 
 .topheader p {
@@ -35,81 +71,128 @@ nav.common {
 
 #headersearch {
     float: right;
-    margin-right: 35px;
-    margin-top: 10px;
-    font-weight: 300;
+    margin-right: 15px;
+    margin-top: 7px;
+    font-weight: 400;
     color: white;
-    font-size: medium;
     text-decoration: none;
 }
 
 nav.secondhead {
     width: auto;
     background-color: #233E95;
-    height: 75px;
+    height: 60px;
 }
 
 .secondhead img {
-    width: 250px;
-    height: 75px;
-    margin-left: 10px;
+    width: 75px;
+    height: 60px;
+}
+
+.stext {
+    color: white;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-weight: 200;
+}
+
+.brand {
+    color: white;
     margin-top: 0px;
 }
 
 .topsecondheader p {
     display: inline;
     color: white;
-    margin-left: 100px;
+    margin-left: 145px;
     text-shadow: black;
     font-weight: bold;
     font-size: x-large;
     text-shadow: 3px 5px 2px #474747;
     color: #FFFFFF;
+    z-index: 100px;
 }
 
-#searchbar:focus {
-    outline: none;
-}
-
-.searchcontent {
-    position: absolute;
+.forsocial {
     display: inline;
-    padding-left: 30px;
-    padding-top: 28px;
-    padding-right: 10px;
-}
-
-.searchcontent button {
-    border-radius: 25px;
-    outline: none;
-}
-
-.searchcontent input[type=text] {
-    box-sizing: border-box;
-    width: 100px;
-    height: 30px;
-    border: 2px solid whitesmoke;
-    text-decoration: none;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 10px;
-    display: inline-block;
-    background-color: white;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-.searchcontent input[type=text]:focus {
-    z-index: 1000;
-    position: relative;
-}
-
-#searchicon {
-    cursor: pointer;
+    background-color: #233E95;
+    margin-left: 25px;
+    height: 60px;
     float: right;
-    margin-top: 22px;
-    margin-right: 120px;
-    border-radius: 80px;
+    position: absolute;
+}
+
+.forsocial button {
+    height: 60px;
+    margin-top: 0px;
+    background-color: #233E95;
+    border-style: outset;
+    outline: none;
+    width: 60px;
+    border-color: #233E95;
+    border-bottom: 0px solid #233E95;
+}
+
+.fa-facebook {
+    margin-left: 0px;
+    color: #FFFF;
+    font-size: xx-large;
+    margin-top: 0px;
+    text-decoration: none;
+    outline: none;
+    border-style: outset;
+    border-right: 0px solid #233E95;
+}
+
+.fa-twitter {
+    color: #08A0E9;
+    margin-left: 0px;
+    text-decoration: none;
+    font-size: xx-large;
+    outline: none;
+    border-style: outset;
+    border-right: 0px solid #233E95;
+}
+
+.icon3 {
+    color: #c4302b;
+    margin-left: 0px;
+    font-size: xx-large;
+    text-decoration: none;
+    outline: none;
+    margin-top: -5px;
+    border-style: outset;
+}
+
+.fa-youtube {
+    color: #c4302b;
+    margin-left: 0px;
+    font-size: xx-large;
+    text-decoration: none;
+    outline: none;
+    border-style: outset;
+    border-right: 0px solid #233E95;
+}
+
+.topsecondheader input {
+    height: 30px;
+    width: 130px;
+    margin-left: 40px;
+    border-radius: 5px;
+    outline: none;
+    border-style: outset;
+}
+
+.topsecondheader .fa-search {
+    border-radius: 5px;
+}
+
+.topsecondheader .search-container button:hover {
+    background: #ccc;
+}
+
+.topthirdheader {
+    background-color: white;
 }
 
 
@@ -134,6 +217,7 @@ nav.secondhead {
     margin-top: 0px;
     margin-bottom: 15px;
     opacity: 1.9;
+    margin-left: 5px;
 }
 
 .button {
@@ -144,8 +228,8 @@ nav.secondhead {
 }
 
 .button--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: black;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -154,11 +238,15 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #fff 10px;
+    border-right: solid #6B826F 10px;
+}
+
+.button--color {
+    color: black
 }
 
 .button--nina:hover {
-    background-color: #ffff;
+    background-color: #6B826F;
 }
 
 .button--nina.button--inverted {
@@ -166,8 +254,8 @@ nav.secondhead {
 }
 
 .but--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #107E7D;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -176,16 +264,16 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #ff8000 10px;
+    border-right: solid #107E7D 10px;
 }
 
 .but--nina:hover {
-    background-color: #ff8000;
+    background-color: #107E7D;
 }
 
 .but1--nina {
-    background: navy;
-    color: #fff;
+    background: #FFF;
+    color: #610345;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -194,16 +282,16 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #93c775 10px;
+    border-right: solid #610345 10px;
 }
 
 .but1--nina:hover {
-    background-color: #93c775;
+    background-color: #610345;
 }
 
 .but2--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #FF6E0E;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -212,16 +300,16 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #4d6de6 10px;
+    border-right: solid #FF6E0E 10px;
 }
 
 .but2--nina:hover {
-    background-color: #4d6de6;
+    background-color: #FF6E0E;
 }
 
 .but3--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #E3B505;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -230,16 +318,16 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid grey 10px;
+    border-right: solid #E3B505 10px;
 }
 
 .but3--nina:hover {
-    background-color: grey;
+    background-color: #E3B505;
 }
 
 .but4--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #27557C;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -248,16 +336,16 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid lightseagreen 10px;
+    border-right: solid #27557C 10px;
 }
 
 .but4--nina:hover {
-    background-color: lightseagreen;
+    background-color: #27557C;
 }
 
 .but5--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #2C9E92;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -266,11 +354,47 @@ nav.secondhead {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid orange 10px;
+    border-right: solid #2C9E92 10px;
 }
 
 .but5--nina:hover {
-    background-color: orange;
+    background-color: #2C9E92;
+}
+
+.but6--nina {
+    background: #FFFF;
+    color: #56666B;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 14px grey;
+    -webkit-box-shadow: 0 0 14px grey;
+    box-shadow: 0 0 14px grey;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    outline: none;
+    border-style: outset;
+    border-right: solid #56666B 10px;
+}
+
+.but6--nina:hover {
+    background-color: #56666B;
+}
+
+.but7--nina {
+    background: #FFFF;
+    color: #B4C292;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 14px grey;
+    -webkit-box-shadow: 0 0 14px grey;
+    box-shadow: 0 0 14px grey;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    outline: none;
+    border-style: outset;
+    border-right: solid #B4C292 10px;
+}
+
+.but7--nina:hover {
+    background-color: #B4C292;
 }
 
 
@@ -280,9 +404,10 @@ nav.secondhead {
     display: inline;
     padding: 1em 0;
     opacity: 0;
-    color: black;
+    color: #FFFF;
     font-weight: bold;
     font-size: large;
+    font-family: Ebrima;
     letter-spacing: 2px;
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
@@ -299,10 +424,10 @@ nav.secondhead {
     left: 0;
     width: 100%;
     height: 100%;
-    color: wheat;
     letter-spacing: 2px;
     font-size: large;
     font-weight: bold;
+    font-family: Ebrima;
     padding-top: 10px;
     padding-right: 10px;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -373,6 +498,9 @@ nav.secondhead {
     transition-delay: 0.55s;
 }
 
+
+/*----- Down content -----*/
+
 .dropdown-content1 {
     margin-left: 10px;
     margin-top: 12px;
@@ -388,13 +516,13 @@ nav.secondhead {
 
 .dropdown-content1 button {
     display: block;
-    position: relative;
     margin-top: 5px;
     float: left;
+    margin-left: 0px;
+    margin-right: 7px;
+    position: relative;
     width: 190px;
-    position: relative;
     border-style: outset;
-    position: relative;
     border-bottom: none;
     outline: none;
     border: none;
@@ -418,7 +546,7 @@ nav.secondhead {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: #ff8000;
+    background: #107E7D;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -450,6 +578,8 @@ nav.secondhead {
     position: relative;
     margin-top: 5px;
     float: left;
+    margin-left: 0px;
+    margin-right: 7px;
     width: 190px;
     position: relative;
     border-style: outset;
@@ -477,7 +607,7 @@ nav.secondhead {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: #93C775;
+    background: #610345;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -509,6 +639,8 @@ nav.secondhead {
     position: relative;
     margin-top: 5px;
     float: left;
+    margin-left: 0px;
+    margin-right: 7px;
     width: 190px;
     position: relative;
     border-style: outset;
@@ -536,7 +668,7 @@ nav.secondhead {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: #4d6de6;
+    background: #FF6E0E;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -568,6 +700,8 @@ nav.secondhead {
     position: relative;
     margin-top: 5px;
     float: left;
+    margin-left: 0px;
+    margin-right: 7px;
     width: 190px;
     position: relative;
     border-style: outset;
@@ -595,7 +729,7 @@ nav.secondhead {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: lightseagreen;
+    background: #E3B505;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -627,6 +761,8 @@ nav.secondhead {
     position: relative;
     margin-top: 5px;
     float: left;
+    margin-left: 0px;
+    margin-right: 7px;
     width: 190px;
     position: relative;
     border-style: outset;
@@ -654,12 +790,73 @@ nav.secondhead {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: grey;
+    background: #27557C;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 
 .dropdown-content5 button:hover:after {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+
+
+/*---- Drop Down 6 ---*/
+
+.dropdown-content6 {
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.dropdown-content6 ul {
+    list-style: none;
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.dropdown-content6 button {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 7px;
+    width: 190px;
+    position: relative;
+    border-style: outset;
+    position: relative;
+    border-bottom: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content6 button:hover {
+    background-color: lightgray;
+}
+
+.dropdown-content6 a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 350;
+}
+
+.dropdown-content6 button::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: #2C9E92;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dropdown-content6 button:hover:after {
     width: 100%;
     left: 0;
     cursor: pointer;
@@ -673,15 +870,19 @@ nav.secondhead {
 
 .carasoul {
     float: left;
-    width: 880px;
-    height: 450px;
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 1025px;
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
     outline: none;
-    -moz-box-shadow: 0 0 23px #ccc;
-    -webkit-box-shadow: 0 0 23px #ccc;
-    box-shadow: 0 0 23px #ccc;
+    border: solid 1px #555;
+    border-bottom: solid 1px #555;
+    background-color: #eed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .carasoul-container {
@@ -695,7 +896,7 @@ nav.secondhead {
     font-weight: bold;
     font-size: xx-large;
     color: black;
-    text-shadow: 4px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    text-shadow: 2px 1px 0 #969696, 1px px 5px #aba8a8;
 }
 
 .carasoul .fadedbox {
@@ -767,241 +968,91 @@ nav.secondhead {
 }
 
 
-/*------Right Side Text Quick Loook(How doI?)-----*/
+/*------Right Side Text Quick Link(How doI?)-----*/
 
-#searchbar {
+.right-content {
+    display: block;
+    align-items: flex-end;
+    position: relative;
+}
+
+.mpc1 {
+    width: 70px;
+    height: 175px;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-weight: bold;
+    font-size: large;
+    outline: none;
+    background-color: white;
+    border-style: outset;
+    border-left: solid #0e6489 2px;
+    color: #0e6489;
+}
+
+.mpc2 {
+    width: 70px;
+    height: 175px;
+    font-weight: bold;
     margin-top: 1px;
-    margin-left: 4px;
-    border-radius: 25px;
-    padding-left: 5px;
+    margin-left: 0px;
+    font-size: large;
     outline: none;
-    width: 375px;
+    border-style: outset;
+    border-left: solid #8dbf54 2px;
+    color: #8dbf54;
+    background-color: white;
 }
 
-.seperate-searchbox {
-    width: 400px;
-    height: 300px;
-    z-index: 1000;
-    background-color: rgb(183, 189, 179);
-    border-radius: 25px;
-    position: absolute;
-    top: 19;
-    right: 0;
-    margin-right: 1px;
-    margin-top: 25px;
+.mpc3 {
+    width: 70px;
+    height: 175px;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 1px;
+    margin-left: 0px;
     outline: none;
+    background-color: white;
+    border-style: outset;
+    border-left: solid #ff5e33 2px;
+    color: #ff5e33;
 }
 
-.list-type1 {
-    width: 200px;
-    position: absolute;
-    z-index: 1000;
-    background-image: url("/assets/bg.jpg");
-    margin-top: 25px;
-    margin-left: 15px;
-    border-radius: 20px;
+.mpc1:hover {
+    background-color: #0e6489;
+    color: white;
 }
 
-.list-type1 ol {
-    counter-reset: li;
-    list-style: none;
-    *list-style: decimal;
-    font-size: 10px;
-    font-family: 'Raleway', sans-serif;
-    padding: 0;
-    margin-bottom: 4em;
+.mpc2:hover {
+    background-color: #8dbf54;
+    color: white;
 }
 
-.list-type1 ol ol {
-    margin: 0 0 0 2em;
+.mpc3:hover {
+    background-color: #ff5e33;
+    color: white;
 }
 
-.list-type1 li {
+
+/*-------right button ends---*/
+
+
+/*---- Down text  ---*/
+
+.tag {
+    background-color: #1597BE;
+    width: 1024px;
+    margin-left: 240px;
+    margin-top: -10px;
+}
+
+
+/*---- Down text ends -----*/
+
+.Ql button {
     margin-top: 10px;
-    margin-left: 15px;
-    height: 19px;
-    width: 175px
-}
-
-.list-type1 a {
-    position: relative;
-    display: block;
-    background: #93C775;
-    color: #000;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-decoration: none;
-    -moz-border-radius: .3em;
-    -webkit-border-radius: .3em;
-    border-radius: 10em;
-    transition: all .2s ease-in-out;
-}
-
-.list-type1 a:hover {
-    background: #d6d4d4;
-    text-decoration: none;
-    transform: scale(1.1);
-}
-
-.list-type1 a:before {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 50%;
-    margin-top: -1.3em;
-    background: #93C775;
-    height: 2em;
-    width: 1.8em;
-    line-height: 2em;
-    border: .3em solid #fff;
-    text-align: center;
-    font-weight: bold;
-    -moz-border-radius: 2em;
-    -webkit-border-radius: 2em;
-    border-radius: 2em;
-    color: #FFF;
-}
-
-
-/*--- right text --*/
-
-.list-type3 {
-    margin: 0 auto;
-    width: 800px;
-    float: left;
-    margin-top: 5px;
-    margin-right: 25px;
-    display: block;
-}
-
-.list-type3 a {
-    height: 35px;
-    line-height: 35px;
-    position: absolute;
-    margin-left: 25px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    font-family: 'Raleway', sans-serif;
-    transition: background-color 1.5s ease;
-    padding: 0 60px 0 12px;
-    background: #0089e0;
-    color: #fff;
-    text-decoration: none;
-    -moz-border-radius-bottomright: 4px;
-    -webkit-border-bottom-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    -moz-border-radius-topright: 4px;
-    -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-#firstlisttype {
-    margin-left: 5px;
-    ;
-}
-
-#secondlisttype {
-    float: left;
-    height: 35px;
-    line-height: 35px;
-    position: absolute;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 8px;
-    font-family: 'Raleway', sans-serif;
-    transition: background-color 1.5s ease;
-    padding: 0 60px 0 12px;
-    background: #93c775;
-    color: #fff;
-    text-decoration: none;
-    -moz-border-radius-bottomright: 4px;
-    -webkit-border-bottom-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    -moz-border-radius-topright: 4px;
-    -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-#secondlisttype::before {
-    content: "";
-    float: left;
-    top: 0;
-    left: -12px;
-    width: 0;
-    height: 0;
-    border-color: transparent #93c775 transparent transparent;
-    border-style: solid;
-    border-width: 18px 12px 18px 0;
-    position: absolute;
-}
-
-.list-type3 li:nth-child(3):after {
-    content: "\A";
-    white-space: pre;
-}
-
-.list-type3 a:before {
-    content: "";
-    float: left;
-    top: 0;
-    left: -12px;
-    width: 0;
-    height: 0;
-    border-color: transparent #0089e0 transparent transparent;
-    border-style: solid;
-    border-width: 18px 12px 18px 0;
-    position: absolute;
-}
-
-.list-type3 a:after {
-    content: "";
-    top: 15px;
-    left: 0;
-    float: left;
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background: #fff;
-    -moz-box-shadow: -1px -1px 2px #004977;
-    -webkit-box-shadow: -1px -1px 2px #004977;
-    box-shadow: -1px -1px 2px #004977;
-}
-
-
-/*---- Right text ends ---*/
-
-
-/*---- Down Images -----*/
-
-#di1 {
-    padding-left: 2px;
-    margin-top: 5px;
-    width: 220px;
-    height: 100px;
-    position: relative;
-}
-
-#di2 {
-    padding-left: 175px;
-    margin-top: 30px;
-    width: 250px;
-    height: 100px;
-    position: relative;
-}
-
-#di3 {
-    float: right;
-    margin-top: 5px;
-    width: 225px;
-    height: 100px;
-    margin-right: 0px;
-    position: relative;
+    border-style: outset;
+    outline: none;
 }
 
 
@@ -1009,7 +1060,14 @@ nav.secondhead {
 
 #footermain {
     font-size: small;
-    background-color: #233E95;
+    background-color: black;
+    position: relative;
+    margin-top: 10px;
+}
+
+.Department {
+    margin-top: 10px;
+    margin-left: -50px;
 }
 
 .footer-classic a,
@@ -1036,6 +1094,40 @@ ol {
     margin: 0;
 }
 
+.rights1 {
+    margin-top: 29px;
+}
+
+.rights {
+    margin-top: 90px;
+    font-size: small;
+    margin-left: -110px;
+}
+
+.brand-logo-light {
+    width: 70px;
+    height: 75px;
+    margin-top: 32px;
+    margin-left: -105px;
+    border-radius: 10px;
+}
+
+.Department {
+    font-size: large;
+    margin-top: 30px;
+}
+
+.contact-list {
+    margin-left: 40px;
+    ;
+}
+
+
+/*---icons----*/
+
+
+/* Icons */
+
 .row::after {
     content: "";
     clear: both;
@@ -1055,52 +1147,16 @@ ol {
     color: #4d6de6;
     display: inline-block;
     vertical-align: baseline;
-    margin-left: -28px;
+    margin-left: 40px;
     margin-right: 7px;
     opacity: 0;
     visibility: hidden;
     transition: .22s ease;
 }
 
-.social {
-    margin-left: 0px;
-    margin-top: 22px;
-}
-
-#icon1 {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    font-size: medium;
-    border-radius: 50%;
-}
-
-#icon1:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
 
 /*=-footer Ends-=*/
+
+.carasoul .captiontext2 {
+    color: black;
+}

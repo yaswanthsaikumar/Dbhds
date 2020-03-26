@@ -16,7 +16,7 @@ export class DbhdsbestComponent implements OnInit {
     public check=false;
     public check1=false;
     public check2=true;
-  public images=["assets/dbhdsimage2.jpg",'assets/dbhdsimage3.jpg',"assets/dbhdsimage1.jpg"];
+  public images=["assets/Dbhdsb.jpg","assets/dbhdsimage2.jpg",'assets/dbhdsimage3.jpg',"assets/dbhdsimage1.jpg"];
   constructor() { }
 
   ngOnInit() {

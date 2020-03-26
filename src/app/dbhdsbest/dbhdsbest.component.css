@@ -48,18 +48,16 @@ nav.common {
 }
 
 .secondhead img {
-    width: 200px;
+    width: 75px;
     height: 75px;
     margin-left: 10px;
     margin-top: 0px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 }
 
 .topsecondheader p {
     display: inline;
     color: white;
-    margin-left: 65px;
+    margin-left: 185px;
     text-shadow: black;
     font-weight: bold;
     font-size: x-large;
@@ -77,7 +75,7 @@ nav.common {
 }
 
 .fa-facebook {
-    margin-left: 125px;
+    margin-left: 155px;
     color: white;
     font-size: xx-large;
     margin-top: 20px;
@@ -105,6 +103,10 @@ nav.common {
     text-decoration: none;
 }
 
+.topthirdheader {
+    background-color: #282F44;
+}
+
 
 /*-----Headers End--------*/
 
@@ -124,7 +126,9 @@ nav.common {
     box-shadow: 0 0 23px #ccc;
 }
 
-.fixedtext {}
+.fixedtext {
+    color: white;
+}
 
 .carasoul-container {
     border-radius: 20px;
@@ -138,6 +142,14 @@ nav.common {
     font-size: xx-large;
     color: black;
     /*text-shadow: 4px 3px 0 #969696, 1px 13px 5px #aba8a8;*/
+}
+
+.captiontext2 {
+    color: black;
+    font-size: x-large;
+    margin-top: -45px;
+    margin-left: 0px;
+    margin-top: 120px;
 }
 
 .carasoul .fadedbox {
@@ -216,6 +228,7 @@ nav.common {
     cursor: pointer;
     width: 120px;
     height: 40px;
+    margin-top: 10px;
     font-weight: bold;
     overflow: hidden;
     border: 2px solid white;
@@ -355,8 +368,8 @@ nav.common {
 }
 
 .button--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: black;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -365,11 +378,15 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #fff 10px;
+    border-right: solid #6B826F 10px;
+}
+
+.button--color {
+    color: black
 }
 
 .button--nina:hover {
-    background-color: #ffff;
+    background-color: #6B826F;
 }
 
 .button--nina.button--inverted {
@@ -377,8 +394,8 @@ nav.common {
 }
 
 .but--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #107E7D;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -387,16 +404,16 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #ff8000 10px;
+    border-right: solid #107E7D 10px;
 }
 
 .but--nina:hover {
-    background-color: #ff8000;
+    background-color: #107E7D;
 }
 
 .but1--nina {
-    background: navy;
-    color: #fff;
+    background: #FFF;
+    color: #610345;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -405,16 +422,16 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #93c775 10px;
+    border-right: solid #610345 10px;
 }
 
 .but1--nina:hover {
-    background-color: #93c775;
+    background-color: #610345;
 }
 
 .but2--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #FF6E0E;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -423,16 +440,16 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid #4d6de6 10px;
+    border-right: solid #FF6E0E 10px;
 }
 
 .but2--nina:hover {
-    background-color: #4d6de6;
+    background-color: #FF6E0E;
 }
 
 .but3--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #E3B505;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -441,16 +458,16 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid grey 10px;
+    border-right: solid #E3B505 10px;
 }
 
 .but3--nina:hover {
-    background-color: grey;
+    background-color: #E3B505;
 }
 
 .but4--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #27557C;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -459,16 +476,16 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid lightseagreen 10px;
+    border-right: solid #27557C 10px;
 }
 
 .but4--nina:hover {
-    background-color: lightseagreen;
+    background-color: #27557C;
 }
 
 .but5--nina {
-    background: navy;
-    color: #fff;
+    background: #FFFF;
+    color: #2C9E92;
     overflow: hidden;
     -moz-box-shadow: 0 0 14px grey;
     -webkit-box-shadow: 0 0 14px grey;
@@ -477,11 +494,47 @@ nav.common {
     transition: background-color 0.3s;
     outline: none;
     border-style: outset;
-    border-right: solid orange 10px;
+    border-right: solid #2C9E92 10px;
 }
 
 .but5--nina:hover {
-    background-color: orange;
+    background-color: #2C9E92;
+}
+
+.but6--nina {
+    background: #FFFF;
+    color: #56666B;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 14px grey;
+    -webkit-box-shadow: 0 0 14px grey;
+    box-shadow: 0 0 14px grey;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    outline: none;
+    border-style: outset;
+    border-right: solid #56666B 10px;
+}
+
+.but6--nina:hover {
+    background-color: #56666B;
+}
+
+.but7--nina {
+    background: #FFFF;
+    color: #B4C292;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 14px grey;
+    -webkit-box-shadow: 0 0 14px grey;
+    box-shadow: 0 0 14px grey;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    outline: none;
+    border-style: outset;
+    border-right: solid #B4C292 10px;
+}
+
+.but7--nina:hover {
+    background-color: #B4C292;
 }
 
 
@@ -491,9 +544,10 @@ nav.common {
     display: inline;
     padding: 1em 0;
     opacity: 0;
-    color: black;
+    color: #FFFF;
     font-weight: bold;
     font-size: large;
+    font-family: Ebrima;
     letter-spacing: 2px;
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
@@ -510,10 +564,10 @@ nav.common {
     left: 0;
     width: 100%;
     height: 100%;
-    color: wheat;
     letter-spacing: 2px;
     font-size: large;
     font-weight: bold;
+    font-family: Ebrima;
     padding-top: 10px;
     padding-right: 10px;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -584,6 +638,9 @@ nav.common {
     transition-delay: 0.55s;
 }
 
+
+/*----- Down content -----*/
+
 .dropdown-content1 {
     margin-left: 10px;
     margin-top: 12px;
@@ -629,7 +686,7 @@ nav.common {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: #ff8000;
+    background: #107E7D;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -690,7 +747,7 @@ nav.common {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: #93C775;
+    background: #610345;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -751,7 +808,7 @@ nav.common {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: #4d6de6;
+    background: #FF6E0E;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -812,7 +869,7 @@ nav.common {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: lightseagreen;
+    background: #E3B505;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -873,7 +930,7 @@ nav.common {
     height: 5px;
     left: 50%;
     position: absolute;
-    background: grey;
+    background: #27557C;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -883,6 +940,70 @@ nav.common {
     left: 0;
     cursor: pointer;
 }
+
+
+/*---- Drop Down 6 ---*/
+
+.dropdown-content6 {
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.dropdown-content6 ul {
+    list-style: none;
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.dropdown-content6 button {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 7px;
+    width: 190px;
+    position: relative;
+    border-style: outset;
+    position: relative;
+    border-bottom: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content6 button:hover {
+    background-color: lightgray;
+}
+
+.dropdown-content6 a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 350;
+}
+
+.dropdown-content6 button::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: #2C9E92;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dropdown-content6 button:hover:after {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+
+
+/*------ Drop Downends -----*/
 
 .middle-content {
     display: block;
@@ -1143,6 +1264,10 @@ nav.common {
     ;
 }
 
+.Department {
+    margin-top: 10px;
+}
+
 .footer-classic a,
 .footer-classic a:focus,
 .footer-classic a:active {
@@ -1165,6 +1290,28 @@ ol {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.rights1 {
+    margin-top: 29px;
+}
+
+.rights {
+    margin-top: 3px;
+    font-size: medium;
+}
+
+.brand-logo-light {
+    width: 70px;
+    height: 75px;
+    margin-top: 32px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+.Department {
+    font-size: large;
+    margin-top: 30px;
 }
 
 .row::after {

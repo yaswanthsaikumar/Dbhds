@@ -16,7 +16,8 @@ export class Dbhdstemplate1Component implements OnInit {
     public showmenu=false;
     public check=false;
     public check1=false;
-    public images=["assets/download (1).png",'assets/download (3).png',"assets/download (1).png"];
+    public check2=true;
+    public images=["assets/dbh.jpg","assets/download1.jpg",'assets/dbhdste2.jpg',"assets/dbhdste3.jpg"];
   ngOnInit() 
   {}
   constructor() {
@@ -143,12 +144,21 @@ export class Dbhdstemplate1Component implements OnInit {
       this.showHide5=false;
     }
   }
+  
   isCheck()
   {
     this.check=!this.check;
     if(this.check1==true)
     {
       this.check1=false;
+      this.check2=false;
+    }
+    if(this.check==false && this.check1==false)
+    {
+      this.check2=true;
+    }
+    else{
+      this.check2=false;
     }
   }
   isCheck1()
@@ -156,8 +166,16 @@ export class Dbhdstemplate1Component implements OnInit {
     if(this.check==true)
     {
       this.check=false;
+      this.check2=false;
     }
     this.check1=!this.check1;
+    if(this.check==false && this.check1==false)
+    {
+      this.check2=true;
+    }
+    else{
+      this.check2=false;
+    }
   }
 
 }
